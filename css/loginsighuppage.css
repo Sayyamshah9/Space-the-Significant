@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/bgimage3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: contentfont;
+    /* overflow: hidden; */
+}
+
+/*-------------------------------Fonts-------------------------------*/
+
+@font-face {
+    font-family: spacefont;
+    src: url(../Fonts/comfortaa/static/Comfortaa-Medium.ttf);
+}
+@font-face {
+    font-family: contentfont;
+    src: url(../Fonts/arimamadhurai/ArimaMadurai-Regular.ttf);
+}
+@font-face {
+    font-family: significantfont;
+    src: url(../Fonts/Lora/static/Lora-Italic.ttf);
+}
+
+/*-------------------------------Desktop-------------------------------*/
+
+/*----------------Header---------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 21, 0.57);
+    box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.25);
+
+    /* width: fit-content; */
+}
+
+
+/*----------------Logo---------------*/
+
+header img{
+    width: 16em;
+    height: 7em;
+    margin: 1rem 3rem;
+    display: block;
+}
+
+/*----------------Navigations---------------*/
+
+.navs ul li a{
+    text-decoration: none;
+    font-family: contentfont;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+.navs ul li a:hover{
+    border-bottom: 2px solid #f5f5f5;
+}
+.navs ul li a:active{
+    border-bottom: 2px solid #f5f5f5;
+}
+.navs ul li{
+    list-style: none;
+    margin-left: 5rem;
+}
+.navs ul{
+    display: flex;
+    margin: 4rem 5rem;
+}
+
+/*----------------Section-1---------------*/
+
+.sec-one-container{
+
+    /* display: none; */
+
+    margin: 2rem auto;
+    width: 702px;
+    height: 550px;
+
+    background: rgba(8, 43, 78, 0.63);
+    box-shadow: -5px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/*----------------google-signup---------------*/
+
+.google-signup{
+    background: #FFFFFF;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    width: 328px;
+    height: 36px;
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.google-signup img{
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    
+}
+
+/*----------------form---------------*/
+form{
+    padding: 2rem 5rem;
+}
+input{
+
+    width: 100%;
+    height: 36px;
+    margin-bottom: 2rem;
+}
+label{
+    color: #FFFFFF;
+}
+form a{
+    color: #FFFFFF;
+    margin: 12rem;
+    /* padding: 2rem 4rem; */
+}
+button{
+    background: #00011A;
+    box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    color: #FFFFFF;
+
+    margin: 2rem 12rem;
+    width: 9rem;
+    height: 2.5rem;
+}
+hr{
+    margin-bottom: 2rem;
+}
+
+/*----------------Section-2---------------*/
+
+.sec-two-container{
+
+    /* display: none; */
+
+    margin: 2rem auto;
+    width: 702px;
+    height: 700px;
+
+    background: rgba(8, 43, 78, 0.63);
+    box-shadow: -5px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.sec-two-container form a{
+    margin-left: 15rem;
+}
+
+/*--------------------------------Mobile-------------------------------*/
+
+@media only screen and (max-width:767px) {
+    header{
+        width: 1080px;
+    }
+    .sec-one-container{
+        margin-left: 10rem;
+    }
+    .sec-two-container{
+        margin-left: 10rem;
+    }
+    
+}

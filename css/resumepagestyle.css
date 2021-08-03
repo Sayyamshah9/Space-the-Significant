@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/bgimage3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: contentfont;
+    /* overflow: hidden; */
+}
+h2{
+    font-weight: normal;
+}
+
+/*-------------------------------Fonts-------------------------------*/
+
+@font-face {
+    font-family: spacefont;
+    src: url(../Fonts/comfortaa/static/Comfortaa-Medium.ttf);
+}
+@font-face {
+    font-family: contentfont;
+    src: url(../Fonts/arimamadhurai/ArimaMadurai-Regular.ttf);
+}
+@font-face {
+    font-family: significantfont;
+    src: url(../Fonts/Lora/static/Lora-Italic.ttf);
+}
+
+/*-------------------------------Desktop-------------------------------*/
+
+/*----------------Header---------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 21, 0.57);
+    box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.25);
+
+    /* width: fit-content; */
+}
+
+
+/*----------------Logo---------------*/
+
+header img{
+    width: 16em;
+    height: 7em;
+    margin: 1rem 3rem;
+    display: block;
+}
+
+/*----------------Navigations---------------*/
+
+.navs ul li a{
+    text-decoration: none;
+    font-family: contentfont;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+.navs ul li a:hover{
+    border-bottom: 2px solid #f5f5f5;
+}
+.navs ul li a:active{
+    border-bottom: 2px solid #f5f5f5;
+}
+.navs ul li{
+    list-style: none;
+    margin-left: 5rem;
+}
+.navs ul{
+    display: flex;
+    margin: 4rem 5rem;
+}
+
+/* ----------------Personal Details---------------  */
+
+
+.personal-details{
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+
+    margin: 2rem 0rem;
+    padding: 2rem;
+}
+
+.personal-details ul li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.personal-details img{
+    width: 24px;
+    height: 24px;
+}
+
+/* ----------------Skills---------------  */
+
+.skills{
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+
+    margin: 2rem 0rem;
+    padding: 2rem;
+}
+
+.skills img{
+    width: 24px;
+    height: 24px;
+}
+
+.skills ul li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* ----------------achivements---------------  */
+
+.achivements{
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+
+    margin: 2rem 0rem;
+    padding: 2rem;
+}
+
+.achivements ul li{
+    list-style: none;
+    padding: 0.5rem 2rem;
+}
+
+/* ----------------Experience---------------  */
+
+.experience{
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+
+    margin: 2rem 0rem;
+    padding: 2rem;
+}
+
+.experience ul li{
+    list-style: none;
+    padding: 0.5rem 2rem;
+}
+
+/* ----------------container---------------  */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------img-container---------------  */
+.img-container img{
+    margin: 2rem 0rem;
+    width: 20rem;
+    height: 27rem;
+
+    position: fixed;
+    background: url(IMG-20190926-WA0015.jpg);
+    box-sizing: border-box;
+    box-shadow: 5px 6px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+}
+
+/* ----------------info-container---------------  */
+
+.info-container{
+    margin-right: 4rem;
+}
+
+/* ----------------Mobile---------------  */
+
+@media only screen and (max-width:767px) {
+
+    /*----------------Header---------------*/
+
+    header{
+        display: block;
+        /* margin-top: 0rem; */
+    }
+
+    /*----------------Logo---------------*/
+
+    header img{
+        margin: auto;
+    }
+
+    /*----------------Navigations---------------*/
+
+    .navs ul li a{
+        font-size: 1rem;
+    }
+    .navs ul li a:active{
+        border-bottom: 2px solid #f5f5f5;
+    }
+    .navs ul li{
+        list-style: none;
+        margin: auto;
+    }
+    .navs ul{
+        display: flex;
+        margin: 1rem 2rem;  
+    }
+    .container{
+        display: block;
+        margin-left: 3rem;
+    }
+
+    .personal-details ul li{
+        padding: 0rem;
+    }
+    .skills ul li{
+        padding: 0rem;
+    }
+}
